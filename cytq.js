@@ -60,7 +60,7 @@ obj ={
       "is_login": true
     },
     "device_id": "B409FB39-AAC3-46E3-80B6-7544B5BB8C27",
-    "name": "***9999",
+    "name": "鹤归何晚",
     "bound_status": {
       "qq": {
         "username": "",
