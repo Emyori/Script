@@ -1,0 +1,40 @@
+# 该订阅为脚本合集,用于Remove Ads + unlock vip.
+# 需要配置 CA 证书并启用 MitM 开关.
+# 如需YouTube去广告,请手动添加 *.googlevideo主机名到hostname .
+# 您可以在使用后手动将本模块禁用，以免产生不必要的MITM.
+[Mitm]
+hostname = boxer.baidu.com, api.m.jd.com, trade-acs.m.taobao.com, www.youtube.com, s.youtube.com, *.googlevideo, account.wps.cn, testflight.apple.com, audiobookpay.kuwo.cn, tingshu.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com
+
+[Script]
+# > Chavy box (多账号Cookie保存切换)
+# 访问: http://boxjs.com管理
+http-request ^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/) script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120, tag=BoxJs
+
+# > 百度防跳转
+http-response ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js, timeout=10, tag=百度防跳转, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/baidu.png
+
+# > 京东比价
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js, timeout=10, tag=京东比价, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png
+
+# > 淘宝比价
+# 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
+http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js, timeout=10, tag=淘宝比价1(内置版)
+http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js, timeout=10, tag=淘宝比价2(内置版)
+
+# > YouTube 
+http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path=https://Choler.github.io/Surge/Script/YouTube.js, tag=YouTube去广告, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+
+# > WPS
+http-response ^https://account.wps.*/api/users/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, requires-body=true, tag=WPS会员, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/WPS.png
+
+#tf区域限制
+http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ script-path=https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js, requires-body=true, timeout=10, tag=TestFlight区域限制, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/testflight.png
+
+#酷我音乐（可下载 永久VIP 解锁听书看书VIP）（听书看书添加audiobookpay.kuwo.cn, tingshu.kuwo.cn到hostname）
+http-response ^https?:\/\/audiobookpay\.kuwo\.cn/a\.p script-path=https://gjds.vip/QX/pojie/kuwoks.js, requires-body=true, tag=酷我看书
+http-response ^https?:\/\/tingshu\.kuwo\.cn/v2\/api\/user\/ script-path=https://gjds.vip/QX/pojie/kuwotingshu.js, requires-body=true, tag=酷我听书
+http-request ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d script-path=https://gjds.vip/QX/pojie/kuwoxz.js, requires-body=true, tag=酷我付费
+http-response ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) script-path=https://gjds.vip/QX/pojie/kuwohy.js, requires-body=true, tag=酷我会员
+
+#彩云（解锁SVIP）
+http-response ^https:\/\/biz\.caiyunapp\.com\/v2\/user.+ script-path=https://raw.githubusercontent.com/o-Il-o/Loon/master/cytq.js, requires-body=true, tag=彩云SVIP, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/caiyun.png
