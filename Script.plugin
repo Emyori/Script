@@ -3,7 +3,7 @@
 # 如需YouTube去广告,请手动添加 *.googlevideo主机名到hostname .
 # 您可以在使用后手动将本模块禁用，以免产生不必要的MITM.
 [Mitm]
-hostname = api.m.jd.com, www.youtube.com, s.youtube.com, *.googlevideo, account.wps.cn, testflight.apple.com, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com
+hostname = api.m.jd.com, account.wps.cn, testflight.apple.com, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com
 
 [Script]
 # > Chavy box (多账号Cookie保存切换)
