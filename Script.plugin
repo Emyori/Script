@@ -21,14 +21,14 @@ http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBu
 # > WPS
 http-response ^https://account.wps.*/api/users/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, requires-body=true, tag=WPS会员, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png
 
-#tf区域限制
+# > tf区域限制
 http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ script-path=https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js, requires-body=true, timeout=10, tag=TestFlight区域限制, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/testflight.png
 
-#酷我音乐（可下载 永久VIP 解锁听书看书VIP）（听书看书添加audiobookpay.kuwo.cn, tingshu.kuwo.cn到hostname）
+# > 酷我音乐（可下载 永久VIP 解锁听书看书VIP）（听书看书添加audiobookpay.kuwo.cn, tingshu.kuwo.cn到hostname）
 #http-response ^https?:\/\/audiobookpay\.kuwo\.cn/a\.p script-path=https://gjds.vip/QX/pojie/kuwoks.js, requires-body=true, tag=酷我看书, img-url=https://raw.githubusercontent.com/o-Il-o/loon/master/kuwo.png
 #http-response ^https?:\/\/tingshu\.kuwo\.cn/v2\/api\/user\/ script-path=https://gjds.vip/QX/pojie/kuwotingshu.js, requires-body=true, tag=酷我听书, img-url=https://raw.githubusercontent.com/o-Il-o/loon/master/kuwo.png
 http-request ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d script-path=https://gjds.vip/QX/pojie/kuwoxz.js, requires-body=true, tag=酷我付费, img-url=https://raw.githubusercontent.com/o-Il-o/loon/master/kuwo.png
 http-response ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) script-path=https://gjds.vip/QX/pojie/kuwohy.js, requires-body=true, tag=酷我会员, img-url=https://raw.githubusercontent.com/o-Il-o/loon/master/kuwo.png
 
-#彩云（解锁SVIP）
+# > 彩云（解锁SVIP）
 http-response ^https:\/\/biz\.caiyunapp\.com\/v2\/user.+ script-path=https://raw.githubusercontent.com/o-Il-o/Loon/master/cytq.js, requires-body=true, tag=彩云SVIP, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/caiyun.png
