@@ -2,8 +2,10 @@
 # 需要配置 CA 证书并启用 MitM 开关.
 # 您可以在使用后手动将本模块禁用，以免产生不必要的MITM.
 
+[MITM]
 hostname = api.m.jd.com, account.wps.cn, testflight.apple.com, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com, notability.com
 
+[Script]
 # > 京东比价
 #^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) url script-response-body https://raw.githubusercontent.com/kan3Git/Script/main/jd_price_lite.js
