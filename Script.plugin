@@ -4,7 +4,7 @@
 #!icon=https://raw.githubusercontent.com/koolson/Qure/master/IconSet/Color/VIP.png
 
 [MITM]
-hostname = api.m.jd.com, account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,testflight.apple.com, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com, notability.com
+hostname = api.m.jd.com, musicpay.kuwo.cn, vip1.kuwo.cn
 
 [Script]
 # > 京东比价
@@ -16,29 +16,21 @@ http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBu
 #http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 #http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
-# > WPS
+# > WPS(account.wps.cn,*.docer.wps.cn,vipapi.wps.cn)
 #http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js, requires-body=true, timeout=10, tag=wps稻壳2
 #http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js, requires-body=true, timeout=10, tag=WPS稻壳
 #http-response ^https?:\/\/account\.wps\.cn\/api\/users script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, requires-body=true, timeout=10, tag=Wps
 
-# > tf区域限制
+# > tf区域限制(testflight.apple.com)
 #http-request ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ requires-body=1,script-path= https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js,tag=TF解锁
 
 # > 酷我音乐（可下载 永久VIP 解锁听书看书VIP）（听书看书添加audiobookpay.kuwo.cn, tingshu.kuwo.cn到hostname）
-#听书
-#http-response
-^http://(.+).(lrts|kuwo).(me|cn)(/v2/api/user/info|/a.p|/vip/v2/user/vip) requires-body=1,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js,tag=酷我
+http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js,requires-body=true, timeout=10, tag=酷我音乐
 
-http-request ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?.+$ requires-body=1,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js,tag=酷我
-#hybz
-http-response ^http://vip1.kuwo.cn/vip/enc/user/vip.+$ requires-body=1,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyy.js,tag=酷我
-#szzj
-http-response ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$ requires-body=1,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyszzj.js,tag=酷我
-
-# > 彩云（解锁SVIP）
+# > 彩云（解锁SVIP）(buy.itunes.apple.com, biz.caiyunapp.com)
 #http-response 
 ^https?:\/\/biz\.caiyunapp\.com\/v2\/user.+ requires-body=1,script-path=https://raw.githubusercontent.com/o-Il-o/Loon/master/cytq.js
 
-# > Notability（解锁订阅）
+# > Notability（notability.com）
 #http-response 
 ^https?:\/\/notability\.com\/subscriptions requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/NotabilityProCrack.js
