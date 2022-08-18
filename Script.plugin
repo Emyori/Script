@@ -4,7 +4,7 @@
 #!icon=https://raw.githubusercontent.com/koolson/Qure/master/IconSet/Color/VIP.png
 
 [MITM]
-hostname = api.m.jd.com, account.wps.cn, testflight.apple.com, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com, notability.com
+hostname = api.m.jd.com, account.wps.cn,*.docer.wps.cn,vipapi.wps.cn,testflight.apple.com, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com, notability.com
 
 [Script]
 # > 京东比价
