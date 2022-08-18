@@ -1,7 +1,7 @@
 #!name=Unlock VIP
 #!desc=会员解锁
 #!author= Emyorii
-#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/caiyun.png
+#!icon=https://raw.githubusercontent.com/koolson/Qure/master/IconSet/Color/VIP.png
 
 [MITM]
 hostname = api.m.jd.com, account.wps.cn, testflight.apple.com, musicpay.kuwo.cn, vip1.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com, notability.com
