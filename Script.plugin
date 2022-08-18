@@ -17,7 +17,7 @@ http-response https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBus
 #http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
 # > WPS
-http-response https?://account.wps.*/api/users/ requires-body=1,script-path= https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+http-response https?://account\.wps\.*\/api\/users\/ requires-body=1,script-path= https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
 # > tf区域限制
 #http-request https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$ requires-body=1,script-path= https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
