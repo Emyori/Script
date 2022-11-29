@@ -1,33 +1,33 @@
 # GlobalMedia.list
 # (Music)
 # > Spotify
-user-agent, Spotify*, GlobalMedia
-host-suffix, pscdn.co, GlobalMedia
-host-suffix, scdn.co, GlobalMedia
-host-suffix, spotify.com, GlobalMedia
-host-suffix, spoti.fi, GlobalMedia
-host-keyword, spotify.com, GlobalMedia
-host-keyword, -spotify-com, GlobalMedia
+USER-AGENT, Spotify*, GlobalMedia
+DOMAIN-SUFFIX, pscdn.co, GlobalMedia
+DOMAIN-SUFFIX, scdn.co, GlobalMedia
+DOMAIN-SUFFIX, spotify.com, GlobalMedia
+DOMAIN-SUFFIX, spoti.fi, GlobalMedia
+DOMAIN-KEYWORD, spotify.com, GlobalMedia
+DOMAIN-KEYWORD, -spotify-com, GlobalMedia
 # > YouTubeMusic
-user-agent, com.google.ios.youtubemusic*, GlobalMedia
-user-agent, YouTubeMusic*, GlobalMedia
+USER-AGENT, com.google.ios.youtubemusic*, GlobalMedia
+USER-AGENT, YouTubeMusic*, GlobalMedia
 # (Video)
 # > Pornhub
-host-suffix, phncdn.com, GlobalMedia
-host-suffix, phprcdn.com, GlobalMedia
-host-suffix, pornhub.com, GlobalMedia
-host-suffix, pornhubpremium.com, GlobalMedia
+DOMAIN-SUFFIX, phncdn.com, GlobalMedia
+DOMAIN-SUFFIX, phprcdn.com, GlobalMedia
+DOMAIN-SUFFIX, pornhub.com, GlobalMedia
+DOMAIN-SUFFIX, pornhubpremium.com, GlobalMedia
 # > 91, xVideos, chaturbate, javbus
-host-suffix, 91porn.com, GlobalMedia
-host-suffix, chaturbate.com, GlobalMedia
-host-suffix, xvideos.com, GlobalMedia
-host-suffix, javbus.com, GlobalMedia
+DOMAIN-SUFFIX, 91porn.com, GlobalMedia
+DOMAIN-SUFFIX, chaturbate.com, GlobalMedia
+DOMAIN-SUFFIX, xvideos.com, GlobalMedia
+DOMAIN-SUFFIX, javbus.com, GlobalMedia
 # > YouTube
-user-agent, com.google.ios.youtube*, GlobalMedia
-user-agent, YouTube*, GlobalMedia
-host-suffix, googlevideo.com, GlobalMedia
-host-suffix, youtube.com, GlobalMedia
-host, youtubei.googleapis.com, GlobalMedia
-host, i.ytimg.com, GlobalMedia
+USER-AGENT, com.google.ios.youtube*, GlobalMedia
+USER-AGENT, YouTube*, GlobalMedia
+DOMAIN-SUFFIX, googlevideo.com, GlobalMedia
+DOMAIN-SUFFIX, youtube.com, GlobalMedia
+DOMAIN, youtubei.googleapis.com, GlobalMedia
+DOMAIN, i.ytimg.com, GlobalMedia
 # > emby
-host-suffix, play.charontv.com
+DOMAIN-SUFFIX, play.charontv.com
