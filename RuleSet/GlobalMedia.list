@@ -1,0 +1,33 @@
+# GlobalMedia.list
+# (Music)
+# > Spotify
+user-agent, Spotify*, GlobalMedia
+host-suffix, pscdn.co, GlobalMedia
+host-suffix, scdn.co, GlobalMedia
+host-suffix, spotify.com, GlobalMedia
+host-suffix, spoti.fi, GlobalMedia
+host-keyword, spotify.com, GlobalMedia
+host-keyword, -spotify-com, GlobalMedia
+# > YouTubeMusic
+user-agent, com.google.ios.youtubemusic*, GlobalMedia
+user-agent, YouTubeMusic*, GlobalMedia
+# (Video)
+# > Pornhub
+host-suffix, phncdn.com, GlobalMedia
+host-suffix, phprcdn.com, GlobalMedia
+host-suffix, pornhub.com, GlobalMedia
+host-suffix, pornhubpremium.com, GlobalMedia
+# > 91, xVideos, chaturbate, javbus
+host-suffix, 91porn.com, GlobalMedia
+host-suffix, chaturbate.com, GlobalMedia
+host-suffix, xvideos.com, GlobalMedia
+host-suffix, javbus.com, GlobalMedia
+# > YouTube
+user-agent, com.google.ios.youtube*, GlobalMedia
+user-agent, YouTube*, GlobalMedia
+host-suffix, googlevideo.com, GlobalMedia
+host-suffix, youtube.com, GlobalMedia
+host, youtubei.googleapis.com, GlobalMedia
+host, i.ytimg.com, GlobalMedia
+# > emby
+host-suffix, play.charontv.com
