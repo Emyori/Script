@@ -16,12 +16,13 @@ DOMAIN-SUFFIX, phncdn.com, GlobalMedia
 DOMAIN-SUFFIX, phprcdn.com, GlobalMedia
 DOMAIN-SUFFIX, pornhub.com, GlobalMedia
 DOMAIN-SUFFIX, pornhubpremium.com, GlobalMedia
-# > 91, xVideos, chaturbate, javbus, jable.tv
+# > 91, xVideos, chaturbate, javbus, jable.tv, 119441.com
 DOMAIN-SUFFIX, 91porn.com, GlobalMedia
 DOMAIN-SUFFIX, chaturbate.com, GlobalMedia
 DOMAIN-SUFFIX, xvideos.com, GlobalMedia
 DOMAIN-SUFFIX, javbus.com, GlobalMedia
 DOMAIN-SUFFIX, jable.tv, GlobalMedia
+DOMAIN-SUFFIX, 119441.com, GlobalMedia
 # > YouTube
 USER-AGENT, com.google.ios.youtube*, GlobalMedia
 USER-AGENT, YouTube*, GlobalMedia
