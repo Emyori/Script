@@ -23,12 +23,6 @@ DOMAIN-SUFFIX, xvideos.com, GlobalMedia
 DOMAIN-SUFFIX, javbus.com, GlobalMedia
 DOMAIN-SUFFIX, jable.tv, GlobalMedia
 DOMAIN-SUFFIX, 119441.com, GlobalMedia
-# > 女仆色
-DOMAIN-SUFFIX, pic.cnddpic.com, GlobalMedia
-DOMAIN-SUFFIX, 3sybf.com, GlobalMedia
-# > FreePorn
-DOMAIN-SUFFIX, i6.liadm.com, GlobalMedia
-DOMAIN-SUFFIX, riztube.com, GlobalMedia
 # > YouTube
 USER-AGENT, com.google.ios.youtube*, GlobalMedia
 USER-AGENT, YouTube*, GlobalMedia
