@@ -23,6 +23,8 @@ DOMAIN-SUFFIX, xvideos.com, GlobalMedia
 DOMAIN-SUFFIX, javbus.com, GlobalMedia
 DOMAIN-SUFFIX, jable.tv, GlobalMedia
 DOMAIN-SUFFIX, 119441.com, GlobalMedia
+DOMAIN-SUFFIX, 3sybf.com, GlobalMedia
+DOMAIN-SUFFIX, riztube.com, GlobalMedia
 # > YouTube
 USER-AGENT, com.google.ios.youtube*, GlobalMedia
 USER-AGENT, YouTube*, GlobalMedia
