@@ -31,6 +31,8 @@ DOMAIN-SUFFIX, googlevideo.com, GlobalMedia
 DOMAIN-SUFFIX, youtube.com, GlobalMedia
 DOMAIN, youtubei.googleapis.com, GlobalMedia
 DOMAIN, i.ytimg.com, GlobalMedia
+# > openai
+DOMAIN-SUFFIX, openai.com, GlobalMedia
 # > emby
 DOMAIN-SUFFIX, play.charontv.com, GlobalMedia
 # > v2ex
