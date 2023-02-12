@@ -33,6 +33,8 @@ DOMAIN, youtubei.googleapis.com, GlobalMedia
 DOMAIN, i.ytimg.com, GlobalMedia
 # > openai
 DOMAIN-SUFFIX, openai.com, GlobalMedia
+DOMAIN, cdn.auth0.com, GlobalMedia
+DOMAIN, openaiapi-site.azureedge.net, GlobalMedia
 # > emby
 DOMAIN-SUFFIX, play.charontv.com, GlobalMedia
 # > v2ex
