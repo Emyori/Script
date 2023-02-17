@@ -10,6 +10,9 @@ DOMAIN-KEYWORD, -spotify-com, GlobalMedia
 # > YouTubeMusic
 USER-AGENT, com.google.ios.youtubemusic*, GlobalMedia
 USER-AGENT, YouTubeMusic*, GlobalMedia
+# > Instagram Music
+DOMAIN-SUFFIX,cdninstagram.com,GlobalMedia
+DOMAIN-SUFFIX,instagram.com,GlobalMedia
 # (Video)
 # > Pornhub
 DOMAIN-SUFFIX, phncdn.com, GlobalMedia
