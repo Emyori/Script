@@ -29,8 +29,7 @@ DOMAIN-SUFFIX, jable.tv, GlobalMedia
 DOMAIN-SUFFIX, 119441.com, GlobalMedia
 DOMAIN-SUFFIX, cdn94.com, GlobalMedia
 # > 泥视频
-DOMAIN-SUFFIX, nivod.tv, GlobalMedia
-DOMAIN-SUFFIX, nivod4.tv, GlobalMedia
+USER-AGENT, nivod, GlobalMedia
 # > YouTube
 USER-AGENT, com.google.ios.youtube*, GlobalMedia
 USER-AGENT, YouTube*, GlobalMedia
