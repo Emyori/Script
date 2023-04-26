@@ -45,4 +45,6 @@ DOMAIN, openaiapi-site.azureedge.net, GlobalMedia
 # > emby
 DOMAIN-SUFFIX, play.charontv.com, GlobalMedia
 # > v2ex
-DOMAIN-SUFFIX, v2ex.com, GlobalMedia
+DOMAIN-SUFFIX, v2ex.com, GlobalGlobalMedia
+# > Sub Store
+DOMAIN-SUFFIX, vercel.app, GlobalGlobalMedia
