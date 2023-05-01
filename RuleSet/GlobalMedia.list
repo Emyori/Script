@@ -49,4 +49,4 @@ DOMAIN-SUFFIX, v2ex.com, GlobalGlobalMedia
 # > Sub Store
 DOMAIN-SUFFIX, vercel.app, GlobalGlobalMedia
 # > Dropbox
-DOMAIN-SUFFIX, dropbox.com, GlobalGlobalMedia
+DOMAIN-SUFFIX, dropboxstatic.com, GlobalGlobalMedia
