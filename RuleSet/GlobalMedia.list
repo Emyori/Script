@@ -44,6 +44,9 @@ DOMAIN, cdn.auth0.com, GlobalMedia
 DOMAIN, openaiapi-site.azureedge.net, GlobalMedia
 # > emby
 DOMAIN-SUFFIX, play.charontv.com, GlobalMedia
+# > tiktok
+DOMAIN-SUFFIX, tiktok.com, GlobalMedia
+DOMAIN-SUFFIX, tiktokcdn.com, GlobalMedia
 # > v2ex
 DOMAIN-SUFFIX, v2ex.com, GlobalGlobalMedia
 # > Sub Store
