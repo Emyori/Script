@@ -51,6 +51,8 @@ DOMAIN-SUFFIX, tiktokcdn.com, GlobalMedia
 DOMAIN-SUFFIX, v2ex.com, GlobalGlobalMedia
 # > Sub Store
 DOMAIN-SUFFIX, vercel.app, GlobalGlobalMedia
+# > Testflight
+DOMAIN-SUFFIX, testflight.apple.com, GlobalGlobalMedia
 # > Dropbox
 DOMAIN-SUFFIX, dropbox.com, GlobalGlobalMedia
 DOMAIN-SUFFIX, dropboxstatic.com, GlobalGlobalMedia
