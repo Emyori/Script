@@ -1,10 +1,8 @@
 #!name=YouTube Translate
 #!desc=YouTube Translate
-#!author= Emyorii
-#!icon=https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/YouTube.png
 
 [MITM]
-hostname = %APPEND% www.youtube.com
+hostname = www.youtube.com
 
 [Script]
 # > YouTube翻译
