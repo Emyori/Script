@@ -1,0 +1,11 @@
+#!name=YouTube Translate
+#!desc=YouTube Translate
+#!author= Emyorii
+#!icon=https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/YouTube.png
+
+[MITM]
+hostname = %APPEND% www.youtube.com
+
+[Script]
+# > YouTube翻译
+YouTube-Translate = type=http-response,pattern=^https:\/\/www\.youtube\.com\/api\/timedtext,requires-body=1,max-size=0,timeout=20,script-path=https://raw.githubusercontent.com/Emyori/loon/main/surgeYouTubeFY.js
