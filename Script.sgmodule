@@ -1,10 +1,8 @@
 #!name=Unlock VIP
 #!desc=会员解锁
-#!author= Emyorii
-#!icon=https://raw.githubusercontent.com/koolson/Qure/master/IconSet/Color/VIP.png
 
 [MITM]
-hostname = api.m.jd.com, musicpay.kuwo.cn, vip1.kuwo.cn,www.youtube.com
+hostname = api.m.jd.com, musicpay.kuwo.cn, vip1.kuwo.cn, www.youtube.com
 
 [Script]
 # > 京东比价
