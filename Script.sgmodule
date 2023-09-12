@@ -18,4 +18,4 @@ YouTube-Translate = type=http-response,pattern=^https:\/\/www\.youtube\.com\/api
 彩云 SVIP = type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/o-Il-o/Loon/master/cytq.js
 
 [URL Rewrite]
-^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? _ reject
+^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? reject
