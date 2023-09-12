@@ -2,7 +2,7 @@
 #!desc=会员解锁
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, musicpay.kuwo.cn, vip1.kuwo.cn, www.youtube.com, buy.itunes.apple.com, biz.caiyunapp.com
+hostname = %APPEND% api.m.jd.com, musicpay.kuwo.cn, vip1.kuwo.cn, www.youtube.com, wrapper.cyapi.cn, biz.caiyunapp.com
 
 [Script]
 # > 京东比价
@@ -16,3 +16,6 @@ YouTube-Translate = type=http-response,pattern=^https:\/\/www\.youtube\.com\/api
 
 # > 彩云（解锁SVIP）
 彩云 SVIP = type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/o-Il-o/Loon/master/cytq.js
+
+[URL Rewrite]
+^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? _ reject
