@@ -47,7 +47,7 @@ $.http.get({
             title: data.date,
             content: `${info.replace(/\n$/g, "")}`,
             icon: 'dollarsign.square',
-            'icon-color': '#9999FF'
+            'icon-color': '#4B0082'
         })
     })
     .then(() => $.done());
