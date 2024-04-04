@@ -1,6 +1,3 @@
-/* 监控汇率变化,@Peng-YM @chxm1023
- * @Key 改了下面板格式 2023-07-01 15:29:42
- 
 [Panel]
 CNYUSD = script-name=CNYUSD,update-interval=43200
 [Script]
@@ -46,8 +43,8 @@ $.http.get({
         $done({
             title: data.date,
             content: `${info.replace(/\n$/g, "")}`,
-            icon: 'dollarsign.square',
-            'icon-color': '#4B0082'
+            icon: 'waveform.path.ecg',
+            'icon-color': '#008000'
         })
     })
     .then(() => $.done());
