@@ -1,3 +1,4 @@
+/*
 [Panel]
 CNYUSD = script-name=CNYUSD,update-interval=43200
 [Script]
