@@ -1,6 +1,5 @@
 //转自https://raw.githubusercontent.com/RS0485/network-rules/main/scripts/gas-price.js
 //兼容surge loon
-//由 @keywos 修改
 //需要本地模块
 /*
 [Panel]
@@ -9,7 +8,10 @@ YJ = script-name=YJ,update-interval=43200
 YJ = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/script/youjia.js,argument=guangdong
 */
 
-var region = 'shanxi-3/xian'
+var region = 'shanghai'
+let now = new Date();
+let month = now.getMonth() + 1; 
+let day = now.getDate(); 
 
 if (typeof $argument !== 'undefined' && $argument !== '') {
     region = $argument
@@ -94,7 +96,7 @@ $httpClient.get(
             }
             else {
                 body = {
-                    title: "实时油价信息",
+                    title: "实时油价 | ${month}月${day}日",
                     //content: `${prices[0].name}  ${prices[0].value}\n${prices[1].name}  ${prices[1].value}\n${prices[2].name}  ${prices[2].value}\n${prices[3].name}  ${prices[3].value}\n${friendly_tips}`,
                     content: `${prices[0].name}  ${prices[0].value}\n${friendly_tips}`,
                     icon: "fuelpump.fill"
