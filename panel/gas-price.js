@@ -10,6 +10,7 @@ YJ = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/getsom
 
 var region = 'shanghai'
 let now = new Date();
+var year = now.getFullYear(); 
 let month = now.getMonth() + 1; 
 let day = now.getDate(); 
 
@@ -96,7 +97,7 @@ $httpClient.get(
             }
             else {
                 body = {
-                    title: "实时油价 | ${month}月${day}日",
+                    title: `实时油价 | ${year}-${month}-${day}`,
                     //content: `${prices[0].name}  ${prices[0].value}\n${prices[1].name}  ${prices[1].value}\n${prices[2].name}  ${prices[2].value}\n${prices[3].name}  ${prices[3].value}\n${friendly_tips}`,
                     content: `${prices[0].name}  ${prices[0].value}\n${friendly_tips}`,
                     icon: "fuelpump.fill"
