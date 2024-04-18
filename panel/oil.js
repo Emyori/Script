@@ -36,14 +36,14 @@ function handleResponse(data) {
   if (oilPriceData.code === 200) {
     const oilPriceInfo = oilPriceData.result;
     const updateTime = new Date(oilPriceInfo.time).toISOString().split('T')[0];
-    const message = `📍地区：${oilPriceInfo.prov}\n⛽92号汽油：${oilPriceInfo.p92}元/升\n⛽95号汽油：${oilPriceInfo.p95}元/升\n🕰︎更新时间：${updateTime}`;
+    const message = `📍${oilPriceInfo.prov} | ${updateTime}\n⛽92号汽油：${oilPriceInfo.p92}元/升\n⛽95号汽油：${oilPriceInfo.p95}元/升`;
 
     const body = {
       title: "今日油价",
       content: message,
       provname: params.provname,
       icon: params.icon,
-      "icon-color": params.color
+      "icon-color": "ffffff"
     };
     $done(body);
   } else {
