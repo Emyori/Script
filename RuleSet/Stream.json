@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "rules": [
+    {
+	  "DOMAIN": [
+        "audio4-ak-spotify-com.akamaized.net",
+        "cdn-spotify-experiments.conductrics.com",
+        "heads-ak-spotify-com.akamaized.net",
+        "spotify.com.edgesuite.net",
+        "spotify.map.fastly.net",
+        "spotify.map.fastlylb.net",
+        "cdn.registerdisney.go.com",
+        "us-west-2.amazonaws.com"
+      ],
+      "DOMAIN-SUFFIX": [
+        "audio-ak-spotify-com.akamaized.net",
+        "byspotify.com",
+        "heads4-ak-spotify-com.akamaized.net",
+        "pscdn.co",
+        "scdn.co",
+        "spoti.fi",
+        "spotify-com.akamaized.net",
+        "spotify-everywhere.com",
+        "spotify.com",
+        "spotify.design",
+        "spotifycdn.com",
+        "spotifycdn.net",
+        "spotifycharts.com",
+        "spotifycodes.com",
+        "spotifyforbrands.com",
+        "spotifyjobs.com",
+        "spotifynewsroom.jp",
+        "spotilocal.com",
+        "tospotify.com",
+        "adobedtm.com",
+        "bam.nr-data.net",
+        "bamgrid.com",
+        "braze.com",
+        "cdn.optimizely.com",
+        "cdn.registerdisney.go.com",
+        "cws.conviva.com",
+        "d9.flashtalking.com",
+        "disney-plus.net",
+        "disney-portal.my.onetrust.com",
+        "disney.demdex.net",
+        "disney.my.sentry.io",
+        "disneyplus.bn5x.net",
+        "disneyplus.com",
+        "disneyplus.com.ssl.sc.omtrdc.net",
+        "disneystreaming.com",
+        "dssott.com",
+        "execute-api.us-east-1.amazonaws.com",
+        "js-agent.newrelic.com"
+      ],
+      "DOMAIN-KEYWORD": [     
+        "-spotify-",
+        "spotify.com",
+        "dualstack.apiproxy-",
+        "dualstack.ichnaea-web-",
+        "netflix",
+        "nflx"
+      ],
+      "IP-CIDR":[
+        "104.154.127.126/32",
+        "35.186.224.47/32"
+      ],
+      "USER-AGENT": [
+        "Spotify*",
+        "Disney*",
+        "Disney+*"
+      ],
+      "PROCESS-NAME": "com.spotify.music"
+    }
+  ]
+}
