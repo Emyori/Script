@@ -1,3 +1,6 @@
+# > emby
+DOMAIN-SUFFIX,play.charontv.com
+DOMAIN-SUFFIX,jmsuper.com
 # > Spotify
 DOMAIN,audio4-ak-spotify-com.akamaized.net
 DOMAIN,cdn-spotify-experiments.conductrics.com
