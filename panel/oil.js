@@ -39,7 +39,7 @@ function handleResponse(data) {
     const message = `⛽92号汽油：${oilPriceInfo.p92}元/升\n⛽95号汽油：${oilPriceInfo.p95}元/升`;
 
     const body = {
-      title: "${oilPriceInfo.prov} | ${updateTime}",
+      title: `${oilPriceInfo.prov} | ${updateTime}`,
       content: message,
       provname: params.provname,
       icon: params.icon,
