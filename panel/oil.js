@@ -36,7 +36,7 @@ function handleResponse(data) {
   if (oilPriceData.code === 200) {
     const oilPriceInfo = oilPriceData.result;
     const updateTime = new Date(oilPriceInfo.time).toISOString().split('T')[0];
-    const message = `⛽92号汽油：${oilPriceInfo.p92}元/升\n\n⛽95号汽油：${oilPriceInfo.p95}元/升`;
+    const message = `⛽92号汽油：${oilPriceInfo.p92}元/升\n⛽95号汽油：${oilPriceInfo.p95}元/升`;
 
     const body = {
       title: `${oilPriceInfo.prov} | ${updateTime}`,
