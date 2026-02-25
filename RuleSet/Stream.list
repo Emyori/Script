@@ -1,7 +1,6 @@
 # > emby
 DOMAIN-SUFFIX,jmsuper.com
 DOMAIN-SUFFIX,freestream.startspoint.com
-DOMAIN-SUFFIX,hohai.eu.org
 # > Spotify
 DOMAIN,audio4-ak-spotify-com.akamaized.net
 DOMAIN,cdn-spotify-experiments.conductrics.com
