@@ -1,5 +1,6 @@
 # > emby
 DOMAIN-SUFFIX,jmsuper.com
+DOMAIN-SUFFIX,c.emby.wtf
 DOMAIN-SUFFIX,freestream.startspoint.com
 # > Spotify
 DOMAIN,audio4-ak-spotify-com.akamaized.net
