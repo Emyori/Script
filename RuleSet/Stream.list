@@ -2,6 +2,12 @@
 DOMAIN-SUFFIX,cr18.eu.org
 DOMAIN-SUFFIX,c.emby.wtf
 DOMAIN-SUFFIX,freestream.startspoint.com
+# > Twitter
+DOMAIN-SUFFIX,t.co
+DOMAIN-KEYWORD,twitter
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,facebook.com
 # > Spotify
 DOMAIN,audio4-ak-spotify-com.akamaized.net
 DOMAIN,cdn-spotify-experiments.conductrics.com
