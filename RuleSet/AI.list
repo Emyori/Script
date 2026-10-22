@@ -29,15 +29,19 @@ IP-ASN,20473,no-resolve
 
 # Muse
 DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,vibes.ai
 DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,hatch.one
 DOMAIN-SUFFIX,willow606.com
 DOMAIN-SUFFIX,ecto1.ai
-DOMAIN-SUFFIX,auth.meta.com
-DOMAIN-SUFFIX,meta.graph.meta.com
+DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,ecto1usercontent.com
 DOMAIN-SUFFIX,meta-agents-apps.workers.dev
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,oculuscdn.com
 
 # Copilot
 DOMAIN,copilot-proxy.githubusercontent.com
